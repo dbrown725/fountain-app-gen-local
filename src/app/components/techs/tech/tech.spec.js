@@ -5,7 +5,7 @@ import {tech} from './tech';
 describe('tech component', () => {
   beforeEach(() => {
     angular
-      .module('fountainTech', ['app/techs/tech.html'])
+      .module('fountainTech', ['app/components/techs/tech.html'])
       .component('fountainTech', tech);
     angular.mock.module('fountainTech');
   });

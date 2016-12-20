@@ -5,7 +5,7 @@ import {tempComp} from './tempComp';
 describe('tempComp component', () => {
   beforeEach(() => {
     angular
-      .module('tempComp', ['app/tempComp/tempComp.html'])
+      .module('tempComp', ['app/components/global/tempComp/tempComp.html'])
       .component('tempComp', tempComp);
     angular.mock.module('tempComp');
   });
