@@ -11,6 +11,6 @@ class TempCompController {
 }
 
 export const tempComp = {
-  templateUrl: 'app/tempComp/tempComp.html',
+  templateUrl: 'app/components/common/tempComp/tempComp.html',
   controller: TempCompController
 };

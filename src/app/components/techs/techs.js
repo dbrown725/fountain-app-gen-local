@@ -2,7 +2,7 @@ class TechsController {
   /** @ngInject */
   constructor($http) {
     $http
-      .get('app/techs/techs.json')
+      .get('app/components/techs/techs.json')
       .then(response => {
         this.techs = response.data;
       });

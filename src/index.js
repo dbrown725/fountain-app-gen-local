@@ -1,23 +1,16 @@
 import angular from 'angular';
 
-import {techsModule} from './app/techs/index';
+import {commonModule} from './app/components/common/index';
+import {techsModule} from './app/components/techs/index';
+
 import 'angular-ui-router';
 import routesConfig from './routes';
 
-import {main} from './app/main';
-import {header} from './app/header';
-import {title} from './app/title';
-import {footer} from './app/footer';
-import {tempComp} from './app/tempComp/tempComp';
+import {main} from './app/components/main';
 
 import './index.scss';
-import './app/tempComp/tempComp.scss';
 
 angular
-  .module('app', [techsModule, 'ui.router'])
+  .module('app', [commonModule, techsModule, 'ui.router'])
   .config(routesConfig)
-  .component('app', main)
-  .component('fountainHeader', header)
-  .component('fountainTitle', title)
-  .component('fountainFooter', footer)
-  .component('tempComp', tempComp);
+  .component('app', main);
