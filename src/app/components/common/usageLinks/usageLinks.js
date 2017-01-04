@@ -1,12 +1,12 @@
 /** Class displays Hello World. */
-class TempCompController {
+class UsageLinksController {
   /**
    * Create Hello World text.
    * @param $http
    * @param $window
    */
   constructor($http, $window) {
-    this.text = 'Hello World from tempComp!';
+    this.text = 'Click me!';
     this.$http = $http;
     this.$window = $window;
   }
@@ -20,7 +20,7 @@ class TempCompController {
   }
 }
 
-export const tempComp = {
-  templateUrl: 'app/components/common/tempComp/tempComp.html',
-  controller: TempCompController
+export const usageLinks = {
+  templateUrl: 'app/components/common/usageLinks/usageLinks.html',
+  controller: UsageLinksController
 };

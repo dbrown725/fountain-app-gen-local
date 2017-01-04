@@ -6,9 +6,9 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
-    .state('tempComp', {
-      url: '/tempComp',
-      component: 'tempComp'
+    .state('usageLinks', {
+      url: '/usageLinks',
+      component: 'usageLinks'
     })
     .state('app', {
       url: '/',
