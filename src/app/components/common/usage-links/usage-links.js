@@ -21,6 +21,6 @@ class UsageLinksController {
 }
 
 export const usageLinks = {
-  templateUrl: 'app/components/common/usageLinks/usageLinks.html',
+  templateUrl: 'app/components/common/usage-links/usage-links.html',
   controller: UsageLinksController
 };

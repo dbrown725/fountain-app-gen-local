@@ -2,7 +2,7 @@ import angular from 'angular';
 
 import {header} from './header/header';
 import {footer} from './footer/footer';
-import {usageLinks} from './usageLinks/usageLinks';
+import {usageLinks} from './usage-links/usage-links';
 
 export const commonModule = 'common';
 
