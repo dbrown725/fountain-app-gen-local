@@ -3,12 +3,26 @@
   align-items: center;
   background-color: $black;
 
-  &-title {
+  &-links {
     flex: 1;
     font-size: 1.5rem;
     margin: 1rem;
-    color: $white;
     cursor: pointer;
+    text-decoration: none;
+
+    &-link {
+      display: inline-block;
+      color: $white;
+      margin-left: 20px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &.activeState {
+        text-decoration: underline;
+      }
+    }
   }
 
   &-date {
