@@ -1,5 +1,3 @@
-/*eslint-disable*/
-
 class TechsController {
   /** @ngInject */
   constructor($window, $log, GetTechs, $scope) {
