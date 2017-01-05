@@ -6,6 +6,12 @@
   margin: 1rem;
   padding: 1rem;
   background-color: white;
+  cursor: pointer;
+
+  .active & {
+    background-color: $purple;
+    color: $white;
+  }
 
   &-logo {
     width: 5rem;

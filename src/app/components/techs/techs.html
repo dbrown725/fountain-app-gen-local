@@ -3,6 +3,11 @@
     Cooked with all these awesome technologies:
   </h2>
   <div class="techs">
-    <app-tech ng-repeat="tech in $ctrl.techs" tech="tech"></app-tech>
+    <app-tech
+      ng-class  = "{'active': $ctrl.isActiveTech(tech)}"
+      ng-repeat = "tech in $ctrl.techs"
+      tech      = "tech"
+      selected  = "$ctrl.onTechSelected(tech)"
+    ></app-tech>
   </div>
 </div>
