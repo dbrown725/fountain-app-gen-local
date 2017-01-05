@@ -1,5 +1,7 @@
-<div class="tech">
-  <img class="tech-logo" ng-src="{{ $ctrl.tech.logo }}"/>
+<div class="tech"
+  ng-click="$ctrl.selected($ctrl.tech)">
+  <img class="tech-logo"
+    ng-src="{{ $ctrl.tech.logo }}"/>
   <h3 class="tech-h3">
     {{ $ctrl.tech.title }}
   </h3>
