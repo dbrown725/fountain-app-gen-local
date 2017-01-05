@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const HubRegistry = require('gulp-hub');
 const browserSync = require('browser-sync');
+const jsdoc = require('gulp-jsdoc3');
 
 const conf = require('./conf/gulp.conf');
 
@@ -16,6 +17,10 @@ gulp.task('test:auto', gulp.series('karma:auto-run'));
 gulp.task('serve', gulp.series('webpack:watch', 'watch', 'browsersync'));
 gulp.task('serve:dist', gulp.series('default', 'browsersync:dist'));
 gulp.task('default', gulp.series('clean', 'build'));
+gulp.task('doc', function (cb) {
+    gulp.src(['README.md', './src/**/*.js'], {read: false})
+        .pipe(jsdoc(cb));
+});
 gulp.task('watch', watch);
 
 function reloadBrowserSync(cb) {
